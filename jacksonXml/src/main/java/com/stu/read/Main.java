@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.stu.read.ability.BoardDesc;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
@@ -27,13 +28,15 @@ public class Main {
         xmlMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         //XML标签名:使用骆驼命名的属性名，
         //xmlMapper.setPropertyNamingStrategy(PropertyNamingStrategy.UPPER_CAMEL_CASE);
-        //设置转换模式
-        xmlMapper.enable(MapperFeature.USE_STD_BEAN_NAMING);
+        //大小写脱敏 默认为false  需要改为true
+        xmlMapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES,true);
         //即标签多于类属性，反序列化时，若实体类没有对应的属性，是否抛出JsonMappingException异常，false忽略掉
         xmlMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        //设置转换模式
+        xmlMapper.enable(MapperFeature.USE_STD_BEAN_NAMING);
 
         XMLInputFactory factory = XMLInputFactory.newInstance();
-        URL resource = Main.class.getClassLoader().getResource("testRead.xml");
+        URL resource = Main.class.getClassLoader().getResource("12log.xml");
         Reader reader = new FileReader(resource.getPath());
         Reader reader2 = new InputStreamReader(resourceAsStream, "UTF-8");
 
@@ -41,7 +44,7 @@ public class Main {
 
             XMLStreamReader streamReader =
                     factory.createXMLStreamReader(reader);
-            System.out.println(xmlMapper.readValue(streamReader, Root.class));
+            System.out.println(xmlMapper.readValue(streamReader, BoardDesc.class));
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("异常~~~~~~~~~~");

@@ -1,0 +1,376 @@
+<!-- 电源单板，系统单板，系统辅助单板可以不填写 -->
+<board_desc>
+	<!-- 厂商名称 -->
+	<manufacturer>华为</manufacturer>
+	<!-- 网元型号,仅支持","分隔符 -->
+	<neType>OptiX OSN 6800,OptiX OSN 3800, OptiX OSN 8800, OptiX OSN 8800 T32, OptiX OSN 8800 T64,OptiX OSN 8800 T16</neType>
+	<!-- 插板类型,同接口getEquipment返回aliasName相同-->
+	<boardAliasName>12LOG</boardAliasName>
+	<!-- 插板小版本号,支持"*"通配符和","分隔符,如果支持,则与getAllequipments中单板的type相同,否则填写"*" -->
+	<boardTypeVersion>*</boardTypeVersion>
+	
+	<boardSupportDomianList>OTN</boardSupportDomianList>
+	
+	<FixedXCList>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=1;CTP=/otu2=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/otu2=1" layerRate="LR_OCH_Transport_Unit_2" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=3;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=4;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=2" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=5;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=3" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=6;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=4" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=7;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=5" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=8;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=6" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=9;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=7" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=10;CTP=/dsr=1"   
+				    zEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=8" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/otu2=1"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=1;CTP=/otu2=1" layerRate="LR_OCH_Transport_Unit_2" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=1"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=3;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=2"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=4;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=3"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=5;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=4"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=6;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=5"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=7;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=6"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=8;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=7"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=9;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+			<FixedXC aEndTP="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201;CTP=/odu2=1/dsr=8"   
+				    zEndTP="PTP=/rack=*/shelf=*/slot=*/domain=*/port=10;CTP=/dsr=1" layerRate="LR_DIGITAL_SIGNAL_RATE" direction="CD_UI"/>
+	</FixedXCList>
+	<FixedBindingTPList/>
+	<boardMaintenanceOperation>
+		<!--是否支持oduk时隙配置(Y/N)-->
+		<isAvailableTimeSlot>N</isAvailableTimeSlot>
+		<!-- 支持的单盘复位方式（软、硬复位，支持","分隔，不支持填"NA"） -->
+		<allowResetList>WarmReset,ColdReset</allowResetList>
+	</boardMaintenanceOperation>
+	<!-- 物理端口编号,支持"*"通配符和","分隔符,采用端口的位置层次关系上报即可,层次关系与getAllPhysicalTerminationPointsWithoutFtps或者getAllFloatingTerminationPoints中端口的层级保持一致,样例如下,仅供参考：
+			华为：PTP=/rack=*/shelf=*/slot=*/domain=*/port=*或者shelf=*/slot=*/domain=*/type=*/port=*
+			中兴：shelf=*/slot=*/type=*/port=*
+			烽火：shelf=*/slot=*/port=*或者shelf=*/slot=*/type=*/port=*
+			贝尔：rack=*/shelf=*/slot=*/port=*
+			-->
+	<boardSupportPerformance>
+		<performanceIndicator>BOARD_TEMP,BDTEMPMAX,BDTEMPMIN</performanceIndicator>
+	</boardSupportPerformance>
+	<!-- OTN域支路PTP口填写模板（可接入客户业务的端口，包含可配置为OTN模式的业务接口） -->
+	<portNo portNo="PTP=/rack=*/shelf=*/slot=*/domain=*/port=1">
+		<!-- 端口类型,取值为PTP -->
+		<tpType>PTP</tpType>
+		<!--端口是否需要创建 -->
+		<isPortNeedCreate>N</isPortNeedCreate>
+		<!-- 当前端口工作域 -->
+		<domain domain="OTN">
+			<!-- 支持的业务类型、映射模式、容器类型、复用路径、交叉或连接级别的组合。该组合共5个参数，均不支持填写列表,
+			当clientType="OTU1"/clientType="OTU2"/clientType="OTU3"等时，clientServicePath应填写实际值，
+			样例：och/odu4,och/odu4/odu3,och/odu4/odu3e2,och/odu4/odu2等，需注意应包含och
+			如果该单板的的业务类型配置在逻辑端口上，则需要映射到物理端口上填写   -->
+			<clientServiceTypeList>
+				<clientServiceType clientType="NA">
+					<clientServiceMappingMode>NA</clientServiceMappingMode>
+					<clientServiceContainer>NA</clientServiceContainer>
+					<clientServicePath>NA</clientServicePath>
+			    	<!--填写支持的连接类型，例如：ODU0,ODU1,ODU2,ODU3,ODU4,ODUFlex,fiber,MFDFR,
+			VC12,VC3,VC4等，按实际填写 -->
+			        <avaliableXCType>LR_OCH_Transport_Unit_2</avaliableXCType>
+				</clientServiceType>
+				<clientServiceType clientType="NA">
+					<clientServiceMappingMode>NA</clientServiceMappingMode>
+					<clientServiceContainer>NA</clientServiceContainer>
+					<clientServicePath>och</clientServicePath>
+			    	<!--填写支持的连接类型，例如：ODU0,ODU1,ODU2,ODU3,ODU4,ODUFlex,fiber,MFDFR,
+			VC12,VC3,VC4等，按实际填写 -->
+			        <avaliableXCType>LR_Optical_Channel</avaliableXCType>
+				</clientServiceType>
+			</clientServiceTypeList>
+			<!-- 下一跳位置，取值：interFTP、interPTP、outerFTP、outerPTP,多个取值之间用","分隔 -->
+
+			<nextHop nextHop="END"/>
+		</domain>
+		
+		<portMaintenanceOperation>
+			<!-- 是否支持PRBS测试(Y/N) -->
+			<isPRBSTest>Y</isPRBSTest>
+			<!-- 是否支持时延测量(Y/N) -->
+			<isDelayTest>N</isDelayTest>
+			<!-- 时延测量方式支持情况（PM/TCM）,仅支持","分隔符,isDelayTest填写N,则这里填写"NA" -->
+			<delayTestTypeList>NA</delayTestTypeList>
+			<!-- 是否支持激光器关断操作(Y/N) -->
+			<isLaserSwitchOff>Y</isLaserSwitchOff>
+			<!-- 是否支持RMON测试(Y/N) -->
+			<isRmonTest>N</isRmonTest>
+			<!-- 是否支持TTI字节管理(Y/N)-->
+			<isModifyTTI>N</isModifyTTI>
+			<!-- 是否支持物理端口环回(Y/N) -->
+			<isPTPLoopBack>Y</isPTPLoopBack>
+			<!-- 是否支持时隙环回(Y/N) -->
+			<isCTPLoopBack>N</isCTPLoopBack>
+			<!-- 光模块是否可插拔(Y/N) -->
+			<modulePlugType>Y</modulePlugType>
+			<!-- 是否支持增益可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyGain>N</isModifyGain>
+			<!-- 是否支持衰耗可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyAttenuation>N</isModifyAttenuation>
+			<!-- 是否支持最大输出功率可调(Y/N) -->
+			<isModifyMaxoutputPower>N</isModifyMaxoutputPower>
+		</portMaintenanceOperation>
+		<tpSupportPerformanceList>
+			<tpSupportPerformance>
+				<!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>PTP=/rack=*/shelf=*/slot=*/domain=*/port=1</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_Optical_Channel</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>och=*</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>
+			LSOOPMAX,LSOOPMIN,OPT_OUTPOW,LSIOPMAX,LSIOPMIN,OPT_INPUTP,LSTMPMAX,LSTMPMIN,LASER_TMP,LSBIASMAX,LSBIASMIN,LD_BIAS,LSCLCMAX,LSCLCMIN,LD_TEC
+				</performanceIndicator>
+			</tpSupportPerformance>
+			</tpSupportPerformanceList>
+	</portNo>
+	<portNo portNo="PTP=/rack=*/shelf=*/slot=*/domain=*/port=3-10">
+		<!-- 端口类型,取值为PTP -->
+		<tpType>PTP</tpType>
+		<!--端口是否需要创建 -->
+		<isPortNeedCreate>N</isPortNeedCreate>
+		<!-- 当前端口工作域 -->
+		<domain domain="OTN">
+			<!-- 支持的业务类型、映射模式、容器类型、复用路径、交叉或连接级别的组合。该组合共5个参数，均不支持填写列表,
+			当clientType="OTU1"/clientType="OTU2"/clientType="OTU3"等时，clientServicePath应填写实际值，
+			样例：och/odu4,och/odu4/odu3,och/odu4/odu3e2,och/odu4/odu2等，需注意应包含och
+			如果该单板的的业务类型配置在逻辑端口上，则需要映射到物理端口上填写   -->
+			<clientServiceTypeList>
+				<clientServiceType clientType="NA">
+					<clientServiceMappingMode>NA</clientServiceMappingMode>
+					<clientServiceContainer>NA</clientServiceContainer>
+					<clientServicePath>NA</clientServicePath>
+					<avaliableXCType>LR_DIGITAL_SIGNAL_RATE</avaliableXCType>
+				</clientServiceType>
+				<clientServiceType clientType="NA">
+					<clientServiceMappingMode>NA</clientServiceMappingMode>
+					<clientServiceContainer>NA</clientServiceContainer>
+					<clientServicePath>och</clientServicePath>
+					<avaliableXCType>LR_Optical_Channel</avaliableXCType>
+				</clientServiceType>
+			</clientServiceTypeList>
+			<!-- 下一跳位置，取值：interFTP、interPTP、outerFTP、outerPTP,多个取值之间用","分隔 -->
+			<nextHop nextHop="interPTP">
+				<!-- 端口连接类型，取值：fixed（固定交叉）、flexible(自动生成)、mannual（手动创建交叉），多个取值之间用","分隔-->
+				<isFixedXC>fixed</isFixedXC>
+				<!-- 当isFixedXC为mannual时，如果当前端口连接到目标端口有特殊规则，填写到下面字段
+				aEndTP 本端端口名称，允许通配。
+				zEndTP 宿端口名称，允许通配
+				layerRate 交叉级别，和交叉获取接口的取值保持一致
+				direction 固定交叉方向，和交叉获取接口的取值保持一致
+				-->
+				<MannualXCRuleList/>
+				<!--layerRate ftp可以绑定的级别(_XV表示虚级联表示可以不是连续的)，
+				     max_total    每个ftp可以绑定相应级别时隙的最大数量
+					 supportBindingServcieType  当前绑定级别所对应的业务类型
+					 bindingObj 支持绑定的资源对象，（允许通配）
+					 绑定的关系描述属性字段不允许出现多个记录，如果有多个就展开描述-->
+				<MannualBindingRuleList/>
+				    <!-- 如果isFixedXC为mannualbinding，则填写绑定规则。isFixedXC为mannualbinding但无规则、
+					isFixedXC为其他取值则闭合标签<bind_xc/> -->
+			</nextHop>
+			<nextHop nextHop="END"/>	
+		</domain>
+		
+		<portMaintenanceOperation>
+			<!-- 是否支持PRBS测试(Y/N) -->
+			<isPRBSTest>N</isPRBSTest>
+			<!-- 是否支持时延测量(Y/N) -->
+			<isDelayTest>N</isDelayTest>
+			<!-- 时延测量方式支持情况（PM/TCM）,仅支持","分隔符,isDelayTest填写N,则这里填写"NA" -->
+			<delayTestTypeList>NA</delayTestTypeList>
+			<!-- 是否支持激光器关断操作(Y/N) -->
+			<isLaserSwitchOff>Y</isLaserSwitchOff>
+			<!-- 是否支持RMON测试(Y/N) -->
+			<isRmonTest>N</isRmonTest>
+			<!-- 是否支持TTI字节管理(Y/N)-->
+			<isModifyTTI>N</isModifyTTI>
+			<!-- 是否支持物理端口环回(Y/N) -->
+			<isPTPLoopBack>Y</isPTPLoopBack>
+			<!-- 是否支持时隙环回(Y/N) -->
+			<isCTPLoopBack>N</isCTPLoopBack>
+			<!-- 光模块是否可插拔(Y/N) -->
+			<modulePlugType>Y</modulePlugType>
+			<!-- 是否支持增益可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyGain>N</isModifyGain>
+			<!-- 是否支持衰耗可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyAttenuation>N</isModifyAttenuation>
+			<!-- 是否支持最大输出功率可调(Y/N) -->
+			<isModifyMaxoutputPower>N</isModifyMaxoutputPower>
+		</portMaintenanceOperation>
+		<tpSupportPerformanceList>
+			<tpSupportPerformance>
+				<!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>PTP=/rack=*/shelf=*/slot=*/domain=*/port=3-10</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_DIGITAL_SIGNAL_RATE</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>dsr=*</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>
+			LSTMPMAX,LSTMPMIN,LASER_TMP,LSBIASMAX,LSBIASMIN,LD_BIAS,LSCLCMAX,LSCLCMIN,LD_TEC
+			</performanceIndicator>
+			</tpSupportPerformance>
+			<tpSupportPerformance>
+				<!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>PTP=/rack=*/shelf=*/slot=*/domain=*/port=3-10</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_OPTICAL_SECTION</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>NA</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>
+			LSOOPMAX,LSOOPMIN,OPT_OUTPOW,LSIOPMAX,LSIOPMIN,OPT_INPUTP
+			</performanceIndicator>
+			</tpSupportPerformance>
+			</tpSupportPerformanceList>
+	</portNo>
+	<portNo portNo="FTP=/rack=*/shelf=*/slot=*/domain=*/port=201">
+		<!-- 端口类型,取值为PTP -->
+		<tpType>FTP</tpType>
+		<!--端口是否需要创建 -->
+		<isPortNeedCreate>N</isPortNeedCreate>
+		<!-- 当前端口工作域 -->
+		<domain domain="OTN">
+			<!-- 支持的业务类型、映射模式、容器类型、复用路径、交叉或连接级别的组合。该组合共5个参数，均不支持填写列表,
+			FTP 的客户侧相关参数当前都应该填写NA，实际可配置的参数映射到单板对应的物理端口上 -->
+			<clientServiceTypeList>
+				<clientServiceType clientType="GE">
+					<clientServiceMappingMode>GFP-T</clientServiceMappingMode>
+					<clientServiceContainer>ODU0</clientServiceContainer>
+					<clientServicePath>NA</clientServicePath>
+					<avaliableXCType>LR_OCH_Data_Unit_0</avaliableXCType>
+				</clientServiceType>
+				<clientServiceType clientType="GE">
+					<clientServiceMappingMode>GMP-TTT</clientServiceMappingMode>
+					<clientServiceContainer>ODU0</clientServiceContainer>
+					<clientServicePath>NA</clientServicePath>
+					<avaliableXCType>LR_OCH_Data_Unit_0</avaliableXCType>
+				</clientServiceType>
+				<clientServiceType clientType="GE">
+					<clientServiceMappingMode>GFP-T</clientServiceMappingMode>
+					<clientServiceContainer>ODU1</clientServiceContainer>
+					<clientServicePath>NA</clientServicePath>
+					<avaliableXCType>LR_OCH_Data_Unit_1</avaliableXCType>
+				</clientServiceType>
+			</clientServiceTypeList>
+			<!-- 下一跳位置，取值：interFTP、interPTP、outerFTP、outerPTP,多个取值之间用","分隔 -->
+			<nextHop nextHop="interPTP">
+				<!-- 端口连接类型，取值：fixed（固定交叉）、flexible(自动生成)、mannual（手动创建交叉），多个取值之间用","分隔-->
+				<isFixedXC>fixed</isFixedXC>
+				<!-- 当isFixedXC为mannual时，如果当前端口连接到目标端口有特殊规则，填写到下面字段
+				aEndTP 本端端口名称，允许通配。
+				zEndTP 宿端口名称，允许通配
+				layerRate 交叉级别，和交叉获取接口的取值保持一致
+				direction 固定交叉方向，和交叉获取接口的取值保持一致
+				-->
+				<MannualXCRuleList/>
+				<!--layerRate ftp可以绑定的级别(_XV表示虚级联表示可以不是连续的)，
+				     max_total    每个ftp可以绑定相应级别时隙的最大数量
+					 supportBindingServcieType  当前绑定级别所对应的业务类型
+					 bindingObj 支持绑定的资源对象，（允许通配）
+					 绑定的关系描述属性字段不允许出现多个记录，如果有多个就展开描述-->
+				<MannualBindingRuleList/>
+				    <!-- 如果isFixedXC为mannualbinding，则填写绑定规则。isFixedXC为mannualbinding但无规则、
+					isFixedXC为其他取值则闭合标签<bind_xc/> -->
+
+			</nextHop>
+		</domain>
+		<portMaintenanceOperation>
+			<!-- 是否支持PRBS测试(Y/N) -->
+			<isPRBSTest>N</isPRBSTest>
+			<!-- 是否支持时延测量(Y/N) -->
+			<isDelayTest>Y</isDelayTest>
+			<!-- 时延测量方式支持情况（PM/TCM）,仅支持","分隔符,isDelayTest填写N,则这里填写"NA" -->
+			<delayTestTypeList>PM,TCM</delayTestTypeList>
+			<!-- 是否支持激光器关断操作(Y/N) -->
+			<isLaserSwitchOff>N</isLaserSwitchOff>
+			<!-- 是否支持RMON测试(Y/N) -->
+			<isRmonTest>Y</isRmonTest>
+			<!-- 是否支持TTI字节管理(Y/N)-->
+			<isModifyTTI>Y</isModifyTTI>
+			<!-- 是否支持物理端口环回(Y/N) -->
+			<isPTPLoopBack>N</isPTPLoopBack>
+			<!-- 是否支持时隙环回(Y/N) -->
+			<isCTPLoopBack>N</isCTPLoopBack>
+			<!-- 光模块是否可插拔(Y/N) -->
+			<modulePlugType>N</modulePlugType>
+			<!-- 是否支持增益可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyGain>N</isModifyGain>
+			<!-- 是否支持衰耗可调(Y/N),modulePlugType填写Y,则这里填写"NA" -->
+			<isModifyAttenuation>N</isModifyAttenuation>
+			<!-- 是否支持最大输出功率可调(Y/N) -->
+			<isModifyMaxoutputPower>N</isModifyMaxoutputPower>
+		</portMaintenanceOperation>
+		<tpSupportPerformanceList>
+			<tpSupportPerformance>
+				<!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>FTP=/rack=*/shelf=*/slot=*/domain=*/port=201</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_OCH_Data_Unit_2</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>odu2=*</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>
+			PM_BBE,PM_ES,PM_SES,PM_UAS,PM_SESR,PM_BBER,PM_FEBBE,PM_FEES,PM_FESES,PM_FEUAS,PM_FESESR,PM_FEBBER,TCM1_IAES,
+			TCM2_IAES,TCM3_IAES,TCM4_IAES,TCM5_IAES,TCM6_IAES,TCM1_BIAES,TCM2_BIAES,TCM3_BIAES,TCM4_BIAES,TCM5_BIAES,
+			TCM6_BIAES,TCM1_BBE,TCM1_ES,TCM1_SES,TCM1_UAS,TCM1_SESR,TCM1_BBER,TCM2_BBE,TCM2_ES,TCM2_SES,TCM2_UAS,TCM2_SESR,
+			TCM2_BBER,TCM3_BBE,TCM3_ES,TCM3_SES,TCM3_UAS,TCM3_SESR,TCM3_BBER,TCM4_BBE,TCM4_ES,TCM4_SES,TCM4_UAS,TCM4_SESR,
+			TCM4_BBER,TCM5_BBE,TCM5_ES,TCM5_SES,TCM5_UAS,TCM5_SESR,TCM5_BBER,TCM6_BBE,TCM6_ES,TCM6_SES,TCM6_UAS,TCM6_SESR,
+			TCM6_BBER,TCM1_FEBBE,TCM1_FEES,TCM1_FESES,TCM1_FEUAS,TCM1_FESESR,TCM1_FEBBER,TCM2_FEBBE,TCM2_FEES,TCM2_FESES,
+			TCM2_FEUAS,TCM2_FESESR,TCM2_FEBBER,TCM3_FEBBE,TCM3_FEES,TCM3_FESES,TCM3_FEUAS,TCM3_FESESR,TCM3_FEBBER,
+			TCM4_FEBBE,TCM4_FEES,TCM4_FESES,TCM4_FEUAS,TCM4_FESESR,TCM4_FEBBER,TCM5_FEBBE,TCM5_FEES,TCM5_FESES,TCM5_FEUAS,
+			TCM5_FESESR,TCM5_FEBBER,TCM6_FEBBE,TCM6_FEES,TCM6_FESES,TCM6_FEUAS,TCM6_FESESR,TCM6_FEBBER
+				</performanceIndicator>
+			</tpSupportPerformance>
+			<tpSupportPerformance>
+       <!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>FTP=/rack=*/shelf=*/slot=*/domain=*/port=201</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_OCH_Transport_Unit_2</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>NA</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>SM_IAES,SM_BIAES,SM_BBE,SM_ES,SM_SES,SM_UAS,SM_SESR,SM_BBER,SM_FEBBE,SM_FEES,SM_FESES,SM_FEUAS,SM_FESESR,SM_FEBBER</performanceIndicator>
+			</tpSupportPerformance>	
+			<tpSupportPerformance>
+       <!-- TpName、layerRate两者结合起来,才能确定一个唯一的端口 -->
+				<TpName>FTP=/rack=*/shelf=*/slot=*/domain=*/port=201</TpName>
+				<!-- 层速率 -->
+				<layerRate>LR_DIGITAL_SIGNAL_RATE</layerRate>
+				<!-- CTP名称,仅支持","分隔符,对于挂载在PTP或者FTP的性能,这里填写"NA"
+				对于CTP的名称,取值为规范附录中约定的CTP标识,支持"*"通配符。举例:dsr=* och=*/odu0=*-->
+				<ctpName>dsr=*</ctpName>
+				<!-- 性能指标,仅支持","分隔符 -->
+				<performanceIndicator>
+			ETHDROP,RXBRDCAST,RXMULCAST,ETHUNDER,ETHOVER,ETHFRG,ETHJAB,RXPKT64,RXPKT65,RXPKT128,RXPKT256,RXPKT512,RXPKT1024,
+			RXPKT1519,TXPKT64,TXPKT65,TXPKT128,TXPKT256,TXPKT512,TXPKT1024,TXPKT1519,RXUNICAST,TXUNICAST,TXMULCAST,TXBRDCAST,
+			RXPAUSE,TXPAUSE,RXBGOOD,TXBGOOD,RXBBAD,TXBBAD,ETHFCS
+				</performanceIndicator>
+			</tpSupportPerformance>
+		</tpSupportPerformanceList>
+	</portNo>
+
+</board_desc>
